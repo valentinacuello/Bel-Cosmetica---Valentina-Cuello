@@ -704,11 +704,277 @@ header{
 }
 
 
+/*Sobre nosotras*/
+
+
+.header{
+    width: 100%;
+    padding: 8em 0 3em 0;
+    background-color: var(--color-rosa-claro);
+}
+
+.header h1{    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-rosa);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.historia{
+    width: 100%;
+}
+
+.historia img{    
+    background-image: url(/img/store_mobile.jpg);
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.historia .historia-txt{
+    padding: 3em;
+    background-color: var(--color-rosa-claro);
+}
+
+.historia .historia-txt h3{    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;    
+    color: var(--color-rosa);
+    margin-bottom: 1em;
+}
+
+.historia .historia-txt p{
+    font-size: 13px;
+}
+
+.quienes-somos{
+    margin: 3em auto;
+}
+
+.quienes-somos h3{    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;    
+    color: var(--color-rosa);
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.quienes-somos .cards{
+    margin: 0 1em;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+
+.cards .cards__content{
+    width: calc(133px + 1em);
+    position: relative;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.cards__content img{
+    width: 130px;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+.cards__content::before{
+    content: "";
+    height: 200px;
+    width: 133px;
+    display: flex;
+    background-color: var(--color-rosa-claro);
+}
+
+.cards__content p{
+    font-weight: 500;
+    color: var(--color-rosa);
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+.cards__content p span{
+    display: block;
+    font-weight: 400;
+    color: #000;
+    font-size: .9rem;
+}
+
+.cards__content--hover{
+    width: 133px;
+    height: 200px;
+    position: absolute;
+    bottom: 3.5em;
+    left: .5em;
+    background-color: rgba(0, 0, 0, .7);
+    padding: .7em;
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .2s ease-in;
+}
+
+.cards__content--hover p{
+    font-size: .8rem;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 1em 0;
+}
+
+.cards .cards__content:hover .cards__content--hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.valor__container{
+    background-color: #fafafa;
+    padding: 1em;
+}
+
+.valor__container h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;    
+    color: var(--color-rosa);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.valor__cards .icono{
+    width: 8em;
+    height: 8em;
+    background-color: var(--color-rosa);
+    border-radius: 100px;
+    display: flex;
+        justify-content: center;
+    margin-bottom: 1.5em; 
+}
+
+.valor__cards .cards{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.valor__cards .icono img{
+    width: 70px;
+}
+
+@media screen and (min-width: 768px){
+
+    .historia{
+        padding: 7em;
+        display: flex;
+    }
+
+    .historia img{
+        width: 40%;
+    }
+
+    .historia .historia-txt{
+        width: 60%;
+        padding: 2.5em;
+    }
+
+    .historia .historia-txt p{
+        font-size: 1rem;
+    }
+
+    .quienes-somos{
+        margin: 0 0 3em 0;
+    }
+
+    .quienes-somos .cards{
+        margin: 0 6em;
+        height: auto;
+    }
+
+    .quienes-somos .cards .cards__content{
+        width: 220px;
+        height: 400px;
+        margin: 0;
+    }
+
+    .quienes-somos .cards .cards__content img{
+        width: 220px;
+        top: 1em;
+        left: 1em;
+    }
+
+    .quienes-somos .cards .cards__content::before{
+        content: "";
+        width: 220px;
+        height: 330px;
+    }
+
+    .quienes-somos .cards .cards__content p{
+        font-size: 1.5rem;
+    }
+
+    
+    .cards__content--hover{
+        width: 100%;
+        height: 330px;
+        position: absolute;
+        left: 1em;
+    }
+
+    .cards__content--hover p{
+        font-size: 1rem !important;
+        color: #fff;
+        text-align: left;
+        margin: 0 0 1em 0;
+    }
+
+    .cards__content--hover .social-media{
+        display: flex;
+            justify-content: space-around;
+    }
+
+    .cards__content--hover .social-media a{
+        font-size: 1.5em;
+    }
+
+    .valor__container{
+        padding: 3em 9em;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+
+    .valor__container p{
+        width: 70%;
+        text-align: center;
+    }
+
+    .valor__container .valor__cards{
+        margin: 3em;
+        display: flex;
+    }
+
+    .valor__container .valor__cards .cards{
+        margin: 0 2em;
+    }
+}
+
+
 /*Footer - Newsletter*/
 
 .newsletter{    
     width: 100%;
-    background-image: url(/img/bg-newsletter.jpg);
+    background-image: url(../img/bg-newsletter.jpg);
     background-size: cover;
     display: flex;
         flex-direction: column;
@@ -828,572 +1094,6 @@ header{
 
 
 
-/*contacto.html*/
 
 
 
-.contacto-containter{
-    height: 100vh;
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-}
-
-.contacto-content{
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-    width: 50%;
-}
-
-.mapa-tienda{
-    height: 35vh;
-    margin-top: 8em;
-}
-
-.contacto-titulo{
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--color-rosa);
-    margin: 1em;
-    text-align: center;
-}
-
-
-.contacto-form{
-    height: 100%;
-}
-
-.form {
-    margin: 0 3em 3em 3em;
-    height: 100%;
-}
-
-.contacto-form .input{
-    position: relative;
-    margin: 1em 0 1em 0;
-}
-
-.form input{
-    width: 100%;
-    height: 4em;
-    border: none;
-    border-bottom: solid 1px var(--color-rosa);
-    outline: none;
-    padding: 0.3em 1em;
-    box-sizing: border-box;
-}
-
-.form .lbl-container{
-    display: flex;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-}
-
-.content-lbl{
-    position: absolute;
-    bottom: 10px;
-    padding-left: 10px;
-    transition: all 0.3s ease;
-    color: rgb(138, 138, 138);
-}
-
-/* acá se hace la animación al hacer foco en el input. el + lo que hace es tomar la clase que esté después dle input, si esa clase estuviese antes,
-entonces no se afectaría y por lo tanto no funcionaría. Lo que está luego de la "," es para que se aplique tambien la transición cuando el campo está 
-completo/validado, sino, el texto del label volvería a su posición inicial, superponiéndose con lo escrito en el input*/
-
-.form input:focus + .lbl-container .content-lbl, .form input:valid + .lbl-container .content-lbl{
-    transform: translateY(-120%);
-    font-weight: 600;
-    color: var(--color-rosa)
-}
-
-
-
-.input-textarea{
-    width: 100%;
-    position: relative;
-}
-
-.textarea{
-    width: 100%;
-    height: 10em;
-    border: solid 1px var(--color-rosa);
-    outline: none;
-    box-sizing: border-box;
-    padding: 20px 0 0 15px;
-    line-height: 3em;
-    
-}
-
-.form .txt-lbl-container{
-    display: flex;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-}
-
-.content-lbl-txt{
-    position: absolute;
-    top: 30px;
-    padding-left: 15px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: rgb(138, 138, 138);
-}
-
-.form textarea:focus + .txt-lbl-container .content-lbl-txt, .form textarea:valid + .txt-lbl-container .content-lbl-txt{ 
-    transform: translateY(-100%);
-    font-weight: 600;
-    color: var(--color-rosa)
-}
-
-.btn-enviar{
-    width: 12em;
-    padding: .7em 1em;
-    margin-top: 10px;
-    background-color: #fff;
-    border: solid 2px var(--color-rosa);
-    cursor: pointer;
-    font-family: "Poppins";    
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--color-rosa);    
-    transition: all 0.2s ease;
-    
-}
-
-.btn-enviar:hover{
-    background-color: var(--color-rosa);
-    color: #fff;
-    font-weight: 600;
-}
-
-
-@media all and (max-width: 414px), (max-width: 375px){
-    .contacto-content{
-        width: 100%;
-    }
-
-    .contacto-containter{
-        height: auto;
-    }
-
-    .contacto-content{
-        top: 1em;
-    }
-
-}
-
-
-
-/*Página tienda*/
-.tienda{
-    width: 100vw;
-    max-width: 100%;
-    margin: 0 auto 5em auto;
-}
-
-.tienda-header{
-    width: 100%;
-    padding: 10em 0 3em 0;
-    margin-bottom: 2em;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    background-color: var(--color-rosa-claro);
-}    
-
-.tienda-header h6{
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--color-rosa);
-}
-
-.filtro-contenedor{
-    display: flex;
-        justify-content: flex-end;
-    max-width: 1320px;
-    padding-right: .8em;
-    margin: 0 auto 3em auto;
-}
-
-#dropdownMenuButton1{
-    background-color: var(--color-rosa);
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-}
-
-
-.card-img-top{
-    height: 250px;
-    width: auto;
-    margin: 1em 3em 0 3em;
-}
-
-
-.card{
-    display: flex;
-    align-items: center;
-    height: 25em;
-}
-
-
-.card-body{
-    width: 100%;
-}
-
-
-.card-body p{
-    font-family: "Poppins";
-    font-weight: 500;
-    margin-bottom: .5em !important;
-    
-}
-
-.card p span{
-    display: block;
-    font-weight: 600;
-    color: var(--color-verde);
-}
-
-.card-body button{
-    width: 10em;
-    height: .8em;
-    padding: 1em 1em;
-    border: solid 2px var(--color-verde);
-    cursor: pointer;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    background-color: #fff;
-    color: #fff;
-    margin: 0 auto;
-    font-size: .9rem;
-    text-transform: uppercase;
-    color: var(--color-verde);
-}
-
-.card-body button:hover{
-    background-color: var(--color-verde);
-    color: #fff;
-}
-
-
-/*Página sobre nosotras*/
-
-
-.about .header{
-    width: 100%;
-    padding: 10em 0 3em 0;
-    margin-bottom: 2em;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    background-color: var(--color-rosa-claro);
-}  
-
-.about .header h3{
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--color-rosa);
-    font-weight: 500;
-}
-
-.about .historia{
-    margin: 5em 10em;
-    display: flex;
-}
-
-
-.about .historia img{
-    width: 40%
-}
-
-.about .historia .historia-txt{    
-    background-color: var(--color-rosa-claro);
-    padding: 5em;
-}
-
-.about .historia .historia-txt h6{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--color-rosa);
-    margin-bottom: 1em;
-}
-
-.about .historia .historia-txt p{
-    margin-bottom: 1em;
-}
-
-
-.quienes-somos{
-    margin: 6em 10em;
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-}
-
-.quienes-somos h6{
-    font-size: 1.5rem;
-    color: var(--color-rosa);
-    font-weight: 500;
-    margin-bottom: 2em;
-}
-
-.card__container{
-    width: 100%;
-    display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-}
-
-
-.card__content{
-    width: 285px;
-    cursor: pointer;
-}
-
-.card__content .card__foto{
-    width: 240px;
-    background-color: var(--color-rosa-claro);
-    position: relative; 
-}
-
-.card__content .card__foto img{
-    width: 240px;
-    position: relative;
-    top: 1em;
-    left: 1em;
-}
-
-
-.card__content p{
-    color: var(--color-rosa);
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1em;    
-    margin-top: 1em;
-    margin-left: 1em;    
-}
-
-
-.card__content p span{
-    display: block;
-    color: #000;
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-
-.card__content--hover{    
-    width: 240px;
-    height: 360px/2;
-    position: absolute;
-    bottom: -10px;
-    left: 1em;
-    background-color: rgba(0, 0, 0, .7);
-    padding: 1em;
-    display: flex;
-        flex-direction: column;
-        justify-content: flex-end;   
-    visibility: hidden;
-    opacity: 0;    
-    transition: visibility 0s, opacity .2s ease-in;
-}
-
-
-.card__content .card__foto .card__content--hover p{
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    margin: 0 0 1em 0;
-}
-
-.social-media a{
-    font-size: 1.2rem;
-    margin-left: .5em;
-}
-
-
-.card__foto:hover .card__content--hover{
-    visibility: visible;
-    opacity: 1;
-}
-
-.valor{
-    background-color: var(--color-gris);
-    
-}
-
-.valor__container{
-    margin: 0 5em;
-    padding-top: 6em;
-    padding-bottom: 6em;
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
-.valor__container h3{
-    font-size: 1.5rem;
-    color: var(--color-rosa);
-    font-weight: 500;
-    margin-bottom: .5em;
-}
-
-.valor__container p{
-    width: 50%;
-    text-align: center;    
-    margin-bottom: 2em;
-}
-
-.valor .cards{
-    display: flex;
-}
-
-.valor .cards .card{
-    display: flex;
-    flex-direction: column;
-    height: auto !important;
-}
-
-
-.valor .cards .card .icono{
-    width: 8em;
-    height: 8em;
-    background-color: var(--color-rosa);
-    border-radius: 100px;
-    display: flex;
-        justify-content: center;
-    margin-bottom: 1.5em;    
-}
-
-
-.valor .cards .card .icono img{
-    width: 70px;
-    fill: #fff;
-}
-
-.valor .cards .card p{
-    margin: 0;
-}
-
-
-
-/*Favoritos*/
-
-.favoritos__lista{
-    margin: 5em 10em;
-}
-
-
-.favoritos .header{
-    width: 100%;
-    padding: 10em 0 3em 0;
-    margin-bottom: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-rosa-claro);
-}
-
-.favoritos .header h3{
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--color-rosa);
-    font-weight: 500;
-}
-
-
-.favoritos__lista .card{
-    border: none;
-    height: auto;
-}
-
-.favoritos__lista .container .card__fav .card-body {
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-}
-
-
-.favoritos__lista .container .card__fav .card-body h3{
-    font-size: 1.2rem;
-    margin-top: 1em;
-    margin-bottom: 0!important;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-.favoritos__lista .container .card__fav .card-body p{
-    font-weight: 600;
-}
-
-
-
-.favoritos__lista .container .card__fav .card-body h3::after{
-    content: "";
-    border: solid 1px #cfcfcf;
-    display: block;
-    margin: 1em auto;
-}
-
-
-.favoritos__lista .container .card__fav .card-body button:first-of-type{
-    width: 100%;
-    padding: 1.5em 1em;    
-    margin-bottom: 1em;
-    cursor: pointer;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    background-color: var(--color-rosa);    
-    color: #fff;
-    font-size: .9rem;
-    text-transform: uppercase;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.favoritos__lista .container .card__fav .card-body button:last-of-type{
-    width: 100%;
-    padding: 1.5em 1em;
-    cursor: pointer;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    background-color: #fff;
-    color: var(--color-rosa);    
-    border: solid 1px var(--color-rosa);   
-    margin: 0 auto;
-    font-size: .9rem;
-    text-transform: uppercase;     
-    transition: all 0.2s ease;
-}
-
-.favoritos__lista .container .card__fav .card-body button:first-of-type:hover{
-    font-weight: 500;
-}
-
-
-.favoritos__lista .container .card__fav .card-body button:last-of-type:hover{
-    background-color: var(--color-rosa-claro);    
-    color: var(--color-rosa); 
-    font-weight: 500;
-
-}

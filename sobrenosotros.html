@@ -18,49 +18,41 @@
     <body>
         <header>
             <nav class="navbar">
-                    <a href="index.html" class="navbar__logo" ><img src="img/logo-bel.png" alt="logoBelCosmetica"></a>               
-                <div class="burgernav">
+                <div class="navbar__burgernav">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                    <ul class="navbar__menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="tienda-btn"><a href="tienda.html">Tienda</a>
-                                <!-- <ul class="submenu">
-                                    <li>Skin care</li>
-                                    <li>Cuidado capilar</li>
-                                    <li>Cosmética corporal</li>
-                                </ul> -->
-                        </li>
-                        <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>    
-                    <ul class="navbar__icons">
-                        <li><a href="#"><i class="fas fa-search search-icon" id="searchIcon"></i></a></li>
-                        <li> <a href="favoritos.html"><i class="fas fa-heart fav-icon"></i></a></li>
-                        <li><a href="tienda.html"><i class="fas fa-user-circle user-icon"></i></a></li>    
-                    </ul>
+                <a href="index.html" class="navbar__logo" ><img src="img/logo-bel.png" alt="logoBelCosmetica"></a>
+                <ul class="navbar__menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>    
+                <ul class="navbar__icons">
+                    <li><a href="#"><i class="fas fa-search search-icon" id="searchIcon"></i></a></li>
+                    <li> <a href="favoritos.html"><i class="fas fa-heart fav-icon"></i></a></li>
+                    <li><a href="tienda.html"><i class="fas fa-user-circle user-icon"></i></a></li>    
+                </ul>
             </nav>
-            <div class="buscador-container">
-                <div class="buscador-content">
-                    <input type="text" name="" id="" placeholder="Buscar en la tienda" class="buscador-input">
+            <div class="buscador">
+                <input type="text" name="" id="" placeholder="Buscar en la tienda" class="buscador__input">
                     <div class="cerrar-btn">
                         <i class="far fa-times-circle" id="cerrarBtnBuscador"></i>
-                    </div>
-                </div>
+                    </div>                
             </div>
         </header>
     
         <main>
             <section class="about">
                 <div class="header">
-                    <h3>Sobre nosotras</h3>
+                    <h1>Sobre nosotras</h1>
                 </div>
                 <article class="historia">
-                    <img src="img/store.jpg" alt="Fotografía de la tienda" class="animate__animated animate__slideInLeft">
+                    <img src="img/store_mobile.jpg" alt="Fotografía de la tienda" class="animate__animated animate__slideInLeft">
                     <div class="historia-txt animate__animated animate__slideInRight">
-                        <h6>Nuestra historia</h6>
+                        <h3>Nuestra historia</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat ullamcorper orci fusce nulla. Fermentum nisl, tincidunt justo sapien, sed quam morbi. Diam pulvinar elit etiam venenatis ultricies. Aenean feugiat placerat tristique laoreet. Eu lacus gravida morbi nulla. Nunc massa, pellentesque tempus egestas magna pharetra.
                             Enim, varius ipsum, quis elementum neque. Non molestie fusce aenean ornare et pharetra lobortis lectus sed. Posuere mattis dignissim volutpat at luctus nulla sit in. Id tristique imperdiet nibh et mauris. Non gravida et in pulvinar morbi neque. Augue in bibendum dolor, amet, egestas.
                         </p>
@@ -73,81 +65,73 @@
                     </div>
                 </article>
                 <article class="quienes-somos">
-                    <h6>¿Quiénes somos?</h6>
-                    <div class="card__container">
-                        <div class="card__content">
-                            <div class="card__foto">
-                                <img src="img/gime.jpg" alt="">
-                                <div class="card__content--hover">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
-                                        <div class="social-media">
-                                            <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                    <h3>¿Quiénes somos?</h3>
+                    <div class="cards">
+                        <div class="cards__content">
+                            <img src="img/gime.jpg" alt="">
+                            <div class="cards__content--hover">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
+                                    <div class="social-media">
+                                        <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                                            style="color: #fff;"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
                                                 style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
-                                                    style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
-                                                    style="color: #fff; padding: 0;"></span></a>
-                                        </div>
-                                    </p>
-                                </div>
+                                        <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
+                                                style="color: #fff; padding: 0;"></span></a>
+                                    </div>
+                                </p>
                             </div>
                             <p>Gime F.<span>CEO · Fundadora</span></p>                        
                         </div>
-                        <div class="card__content">
-                            <div class="card__foto">
-                                <img src="img/clara.jpg" alt="">
-                                <div class="card__content--hover">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
-                                        <div class="social-media">
-                                            <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                        <div class="cards__content">
+                            <img src="img/clara.jpg" alt="">
+                            <div class="cards__content--hover">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
+                                    <div class="social-media">
+                                        <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                                            style="color: #fff;"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
                                                 style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
-                                                    style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
-                                                    style="color: #fff; padding: 0;"></span></a>
-                                        </div>
-                                    </p>
-                                </div>
+                                        <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
+                                                style="color: #fff; padding: 0;"></span></a>
+                                    </div>
+                                </p>
                             </div>
                             <p>Clara R.<span>CEO · Comunicación</span></p>
                         </div>
-                        <div class="card__content">
-                            <div class="card__foto">
-                                <img src="img/arabella.jpg" alt="">
-                                <div class="card__content--hover">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
-                                        <div class="social-media">
-                                            <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                        <div class="cards__content">
+                            <img src="img/arabella.jpg" alt="">
+                            <div class="cards__content--hover">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
+                                    <div class="social-media">
+                                        <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                                            style="color: #fff;"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
                                                 style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
-                                                    style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
-                                                    style="color: #fff; padding: 0;"></span></a>
-                                        </div>
-                                    </p>
-                                </div>
+                                        <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
+                                                style="color: #fff; padding: 0;"></span></a>
+                                    </div>
+                                </p>
                             </div>
                             <p>Arabella L.<span>Marketing · Redes</span></p>
                         </div>
-                        <div class="card__content">
-                            <div class="card__foto">
-                                <img src="img/alejandra.jpg" alt="">
-                                <div class="card__content--hover">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
-                                        <div class="social-media">
-                                            <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                        <div class="cards__content">
+                            <img src="img/alejandra.jpg" alt="">
+                            <div class="cards__content--hover">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. 
+                                    <div class="social-media">
+                                        <a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"
+                                            style="color: #fff;"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
                                                 style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"
-                                                    style="color: #fff;"></span></a>
-                                            <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
-                                                    style="color: #fff; padding: 0;"></span></a>
-                                        </div>
-                                    </p>
-                                </div>
+                                        <a href="#"><span class="iconify" data-icon="dashicons:whatsapp" data-inline="false"
+                                                style="color: #fff; padding: 0;"></span></a>
+                                    </div>
+                                </p>
                             </div>
                             <p>Alejandra M.<span>Asesoramiento</span></p>
                         </div>
@@ -157,20 +141,20 @@
                     <div class="valor__container">
                         <h3>Por qué elegirnos</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor, ullamcorper ut turpis gravida est imperdiet faucibus fringilla eu. Senectus amet ut diam dictum consequat velit. Quis arcu blandit quam amet. Montes, sodales amet sollicitudin amet at amet sed a.</p>
-                        <div class="valor cards">
-                            <div class="card">
+                        <div class="valor__cards">
+                            <div class="cards">
                                 <div class="icono">
                                     <img src="img/eco-friendly.svg" alt="">
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. Nullam nam sit gravida morbi etiam dolor. Proin non amet, tincidunt congue.</p>    
                             </div>
-                            <div class="card">
+                            <div class="cards">
                                 <div class="icono">
                                     <img src="img/chemical-free.svg" alt="">
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare volutpat iaculis a, arcu. Nullam nam sit gravida morbi etiam dolor. Proin non amet, tincidunt congue.</p>    
                             </div>
-                            <div class="card">
+                            <div class="cards">
                                 <div class="icono">
                                     <img src="img/quality.svg" alt="">
                                 </div>
