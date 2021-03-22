@@ -21,7 +21,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const navBarLinks = document.getElementsByClassName("navbar__menu")[0];
 
     burgerMenu.addEventListener("click", function(){
-        navBarLinks.classList.toggle("active"); //lo que hago acá es que al hacer toggle agrega la clase. active a la clase .navbar-linkss
+        navBarLinks.classList.toggle("active"); //lo que hago acá es que al hacer toggle agrega la clase. active a la clase .navbar-linkss https://developer.mozilla.org/es/docs/Web/API/Element/classList 
+    });
+
+
+    /*Leer más en "Sobre Nosotras - Nuestra historia*/
+    const leerMasBtn = document.querySelector(".leermas-btn");
+    const txtParrafo = document.querySelector(".txt-p");
+
+    leerMasBtn.addEventListener("click", function(e){
+        txtParrafo.classList.toggle("mostrar-mas");
+
+        if(leerMasBtn.innerText.toUpperCase()  === "Leer más...".toUpperCase()){//El toUpperCase() método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada. Esto es una buena práctica para que cada vez que se haga el if la comparación la haga con el string en mayúsculas independientemente de cómo esté escrito el texto original
+            leerMasBtn.innerText = "Leer menos...";
+        } else {
+            leerMasBtn.innerText = "Leer más..."
+        }
     });
 
 }); 
