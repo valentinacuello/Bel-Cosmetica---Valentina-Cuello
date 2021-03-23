@@ -1180,6 +1180,19 @@ header{
 }
 
 @media all and (max-width: 320px){
+    
+    .container .item-tienda{
+        width: 100%;
+    }
+
+    .item-tienda .card .card__img .icon-action{ 
+        display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        padding: 0 2em;
+        bottom: .7em;
+    }
+
     .item-tienda .card .card__img img{
         height: 130px;
     }
