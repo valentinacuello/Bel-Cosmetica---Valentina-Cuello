@@ -29,16 +29,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const leerMasBtn = document.querySelector(".leermas-btn");
     const txtParrafo = document.querySelector(".txt-p");
 
-    leerMasBtn.addEventListener("click", function(e){
-        txtParrafo.classList.toggle("mostrar-mas");
+    if (leerMasBtn != null){
+        leerMasBtn.addEventListener("click", function(){
+            txtParrafo.classList.toggle("mostrar-mas");
+    
+            if(leerMasBtn.innerText.toUpperCase()  === "Leer más...".toUpperCase()){//El toUpperCase() método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada. Esto es una buena práctica para que cada vez que se haga el if la comparación la haga con el string en mayúsculas independientemente de cómo esté escrito el texto original
+                leerMasBtn.innerText = "Leer menos...";
+            } else {
+                leerMasBtn.innerText = "Leer más..."
+            }
+        });
+    }
+    
 
-        if(leerMasBtn.innerText.toUpperCase()  === "Leer más...".toUpperCase()){//El toUpperCase() método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada. Esto es una buena práctica para que cada vez que se haga el if la comparación la haga con el string en mayúsculas independientemente de cómo esté escrito el texto original
-            leerMasBtn.innerText = "Leer menos...";
-        } else {
-            leerMasBtn.innerText = "Leer más..."
-        }
-    });
+    // /*View Mode en la tienda*/
+    // const gridBtn = document.querySelector(".grid-btn");
+    // const listBtn = document.querySelector(".list-btn");
+    // const itemCard = document.querySelector(".item-tienda");
 
+    
+    // if(listBtn != null){
+    //     listBtn.addEventListener("click", function(){
+    //         itemCard.classList.add("item-list");
+    //     });
+    // }
+    
 }); 
 
 
