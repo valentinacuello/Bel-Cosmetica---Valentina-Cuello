@@ -42,18 +42,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
 
-    // /*View Mode en la tienda*/
-    // const gridBtn = document.querySelector(".grid-btn");
-    // const listBtn = document.querySelector(".list-btn");
-    // const itemCard = document.querySelector(".item-tienda");
+    /*View Mode en la tienda*/
+    const gridBtn = document.querySelector(".grid-btn");
+    const listBtn = document.querySelector(".list-btn");
+    const itemCard = document.querySelector(".item-tienda");
 
     
-    // if(listBtn != null){
-    //     listBtn.addEventListener("click", function(){
-    //         itemCard.classList.add("item-list");
-    //     });
-    // }
+    if(listBtn != null){
+        listBtn.addEventListener("click", function(){
+            document.getElementById("listaTienda").classList.add("list-view");
+        });
+    }
     
+    if(gridBtn != null){
+        gridBtn.addEventListener("click", function(){
+            document.getElementById("listaTienda").classList.remove("list-view");
+        });
+    }
+
 }); 
 
 

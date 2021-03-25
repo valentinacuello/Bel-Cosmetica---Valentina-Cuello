@@ -787,28 +787,28 @@ header{
         align-items: center;
 }
 
-.tienda .view-mode{
+.tienda .view-mode__container{
     display: flex;
         justify-content: space-between;
     margin: 2em;
 }
 
-.tienda .view-mode .grid-btn{
+.tienda .view-mode__container .view-mode__btn{
     display: flex;
      align-items: center;
 }
 
-.tienda .view-mode .grid-btn span{
+.tienda .view-mode__container .view-mode__btn span{
     display: none;
 }
 
-.tienda .view-mode .grid-btn > button{
+.tienda .view-mode__container .view-mode__btn > button{
     background: none;
     border: none;
     font-size: 1.5rem;
 }
 
-.tienda .view-mode .grid-btn > button:last-of-type{
+.tienda .view-mode__container .view-mode__btn > button:last-of-type{
     margin-left: .5em;
 }
 
@@ -838,7 +838,7 @@ header{
     width: 50%;
 }
 
-.item-list{
+.list-view > .item-tienda{
     width: 100%;
 }
 
@@ -936,7 +936,27 @@ header{
     }
 }
 
+@media all and (min-width: 768px){
+    .tienda .view-mode__container{
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+
+    }
+}
+
 @media all and (min-width: 1024px){
+
+    .tienda .view-mode__container{
+        margin-right: 13em;
+        justify-content: flex-end;
+    }
+
+
+    .tienda .view-mode__container .view-mode__btn{
+        display: none;
+    }
+
+
     .item-tienda .card .card__img .icon-action{ 
         display: none;
             flex-direction: column;
@@ -961,6 +981,7 @@ header{
     .item-tienda .card:hover{
         transform: scale(1.05);
     }
+
 }
 
 
@@ -991,6 +1012,7 @@ header{
     width: 100%;
     object-fit: cover;
     object-position: top;
+    margin-top: 1em;
 }
 
 .historia .historia-txt{
@@ -1399,6 +1421,141 @@ header{
     }
 }
 
+
+/*Favoritos*/
+
+
+
+.favoritos .header{
+    width: 100%;
+    padding: 8em 0 3em 0;
+    background-color: var(--color-rosa-claro);
+}
+
+.favoritos .header h1{    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-rosa);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.favoritos .favoritos__lista{
+    flex-wrap: wrap;
+}
+
+.container{
+    margin-top: 3em;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.item-fav{
+    width: auto;
+    flex: none;
+}
+
+.card__fav{
+    border: none;
+}
+
+.card__fav--img{
+    width: 250px;
+    height: 300px;
+    border: none;
+    padding: 1em;
+    display: flex;
+        justify-content: center;
+    border: solid 1px #d3d3d3;
+    position: relative;
+}
+
+.favoritos .favoritos__lista .container .row .card__fav img{    
+    width: 70%;
+}
+
+.card-body{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.card-body h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card-body h3::after{
+    content: "";
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-image: initial;
+    margin: 1em 0 0 0;
+}
+
+.card-body p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.card-body .btn-primary{
+    padding: .7em 1em;
+    margin-bottom: 1em;
+    background-color: var(--color-rosa);
+    border-radius: unset;    
+    border-color: var(--color-rosa);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.card-body .btn-secondary{
+    padding: .7em 1em;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border-radius: unset;    
+    border-color: var(--color-rosa);
+    text-transform: uppercase;
+    color: var(--color-rosa);
+    font-weight: 500;
+}
+
+@media all and (min-width: 768px){
+    .favoritos .favoritos__lista{
+        padding: 3em;
+    }
+
+    .card-body .btn-primary:hover{
+        padding: .7em 1em;
+        margin-bottom: 1em;
+        background-color: transparent;
+        border-radius: unset;    
+        border-color: var(--color-rosa);
+        text-transform: uppercase;
+        color: var(--color-rosa);
+        font-weight: 500;
+    }
+
+    .card-body .btn-secondary:hover{
+        padding: .7em 1em;
+        margin-bottom: 1em;
+        background-color: var(--color-rosa);
+        border-radius: unset;    
+        border-color: var(--color-rosa);
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+    }
+
+}
 
 /*Footer - Newsletter*/
 
