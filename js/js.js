@@ -60,6 +60,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
 
+    /*Botón top*/
+
+    var topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function(){
+
+        if(window.pageYOffset > 100){
+            topBtn.style.display="flex";        
+        } 
+
+        if(window.pageYOffset < 100){
+            topBtn.style.display="none";  
+        }
+    };
+
+    topBtn.addEventListener("click", function(){
+
+        window.scrollTo(0, 0, "smooth")
+        
+    });
+
 }); 
 
 
