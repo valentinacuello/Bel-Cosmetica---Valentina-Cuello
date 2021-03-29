@@ -104,20 +104,22 @@ header{
 .navbar__menu{
     width: 100%;
     height: 50vh;
-    display: none;
+    display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     position: absolute;    
     right: 0;
-    left: 0;
+    left: -100%;
     top: 6em;
     background-color: #fff;
+    transition: all .4s ease-in-out;
 }
 
 .active{
-    display: flex;
+    left: 0;
     box-shadow: 0px 5px 10px -5px #8C8C8C;
+
 }
 
 .navbar__menu li:not(:last-child){
@@ -151,7 +153,8 @@ header{
         display: flex;
             flex-direction: row;
         position: relative;
-        top: 0;    
+        top: 0;  
+        left: 0;
 
     }
 
@@ -889,6 +892,7 @@ header{
     border-radius: 3em;
     margin: .3em;
     box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.15);
+
 }
 
 .item-tienda .card .card__img a:not(:last-child) i:first-child{
@@ -962,11 +966,20 @@ header{
 
 
     .item-tienda .card .card__img .icon-action{ 
-        display: none;
+        width: auto;
+        display: flex;
             flex-direction: column;
             justify-content: space-evenly;
         padding: 0 2em;
         bottom: .7em;
+        right: 0;
+        transform: scale(0);
+        transition: all .4s ease;
+    }
+
+    .item-tienda .card .card__img .icon-action a{
+        position: relative;
+        right: 0;
     }
 
     .item-tienda .card .card__img img{
@@ -976,13 +989,15 @@ header{
     
     .item-tienda .card:hover .icon-action{
         display: flex;
+        transform: scale(1);
     }
 
-    .item-tienda .card{
+
+    .item-tienda .card .card__img{
         transition: .2s ease-in;
     }
 
-    .item-tienda .card:hover{
+    .item-tienda .card .card__img:hover{
         transform: scale(1.05);
     }
 
@@ -1387,7 +1402,7 @@ header{
 .contacto .contacto__form .contacto__form--input label{
     position: absolute;
     left: 0;
-    bottom: 12px;
+    bottom: 20px;
     padding-left: 1em;
     color: #9b9b9b;
     pointer-events: none;
@@ -1827,7 +1842,7 @@ footer .copyright p span{
     display: none;
         justify-content: center;
         align-items: center;
-    box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.37);
     cursor: pointer;
     z-index: 1000;
 }
