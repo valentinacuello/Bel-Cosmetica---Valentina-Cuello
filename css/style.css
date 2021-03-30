@@ -776,7 +776,10 @@ header{
     height: 2rem;
 }
 
-
+.nuevalinea__grid-container .icon-action  a:hover{
+    background-color: var(--color-rosa);
+    color: #fff;
+}
 
 /*Tienda*/
 
@@ -891,8 +894,7 @@ header{
         align-items: center;
     border-radius: 3em;
     margin: .3em;
-    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.15);
-
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.15);
 }
 
 .item-tienda .card .card__img a:not(:last-child) i:first-child{
@@ -970,8 +972,7 @@ header{
         display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-        padding: 0 2em;
-        bottom: .7em;
+        padding: 3em 1em;
         right: 0;
         transform: scale(0);
         transition: all .4s ease;
@@ -980,6 +981,11 @@ header{
     .item-tienda .card .card__img .icon-action a{
         position: relative;
         right: 0;
+    }
+
+    .item-tienda .card .card__img .icon-action a:hover{
+        background-color: var(--color-rosa);
+        color: #fff;
     }
 
     .item-tienda .card .card__img img{
