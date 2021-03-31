@@ -77,8 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     topBtn.addEventListener("click", function(){
 
-        window.scrollTo(0, 0, "smooth")
-        
+        window.scrollTo(0, 0, "smooth")        
     });
 
 }); 
