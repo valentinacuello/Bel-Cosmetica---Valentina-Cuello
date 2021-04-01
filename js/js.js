@@ -67,11 +67,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     window.onscroll = function(){
 
         if(window.pageYOffset > 100){
-            topBtn.style.display="flex";        
+            topBtn.style.opacity="1";        
         } 
 
         if(window.pageYOffset < 100){
-            topBtn.style.display="none";  
+            topBtn.style.opacity="0";  
         }
     };
 

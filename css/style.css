@@ -44,12 +44,13 @@ html{
 }
 
 body{
-  font-family: "Poppins";  
-}
-
+    font-family: "Poppins";  
+  }
+  
 header{
     width: 100vh;
 }
+
 
 .navbar{
     height: 100px;
@@ -768,7 +769,7 @@ header{
         align-items: center;
     border-radius: 3em;
     margin: .3em;
-    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.15);
 }
 
 
@@ -835,7 +836,7 @@ header{
 }
 
 .tienda .container{
-    padding: 2em;
+    padding: 0 1em;
 }
 
 
@@ -860,6 +861,7 @@ header{
     padding: 1em;
     display: flex;
         justify-content: center;
+        align-items: flex-end;
     border: solid 1px #d3d3d3;
     position: relative;
 }
@@ -872,14 +874,13 @@ header{
 
 .item-tienda .card .card__img .icon-action{
     width: 100%;
-    height: 90%;
     position: absolute;
     display: flex;
         justify-content: center;
         align-items: flex-end;
 }
 
-.item-tienda .card .card__img .icon-action a{    
+.item-tienda .card .card__img .icon-action > a{    
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -1199,25 +1200,7 @@ header{
 
 
 .valor{
-    background-image: url(../img/bh-valor.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    position: relative;   
-    z-index: 1;
-}
-
-.valor::after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-rosa);
-    opacity: 0.7;
-    position: absolute;
-    top: 0;    
-    z-index: -1;
+    background-color: var(--color-rosa-claro);
 }
 
 .valor__container{
@@ -1228,7 +1211,7 @@ header{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;    
-    color: #fff;
+    color: var(--color-rosa);
     text-align: center;
 }
 
@@ -1245,6 +1228,7 @@ header{
     display: flex;
         justify-content: center;
     margin-bottom: 1.5em; 
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
 
@@ -1346,7 +1330,8 @@ header{
     }
 
     .valor__container .valor__cards .cards{
-        margin: 0;
+        margin: 0;        
+        width: 33%;
     }
 
 }
@@ -1393,7 +1378,7 @@ header{
     padding-top: 100px;
 }
 
-.mapa-tienda .info__links{
+.mapa-tienda .info__links, .rrss-icon{
     display: none;
 }
 
@@ -1502,11 +1487,11 @@ header{
 
 
 @media all and (min-width: 1024px){
-    .contacto{
+    .contacto{        
+        height: 100vh;
         display: flex;
             justify-content: center;
             align-items: center;
-        padding: 11em 0 5em 0;
     }
 
     .mapa-tienda{
@@ -1602,12 +1587,14 @@ header{
     padding: 1em;
     display: flex;
         justify-content: center;
+        align-items: center;
     border: solid 1px #d3d3d3;
     position: relative;
 }
 
 .favoritos .favoritos__lista .container .row .card__fav img{    
-    width: 70%;
+    height: 200px;
+    width: auto;
 }
 
 .card-body{
@@ -1702,6 +1689,7 @@ header{
 .producto__wrapper .container .row .img-producto{
     display: flex;
         justify-content: center;
+        align-items: center;
     padding-top: 2em;    
     background-color: #fff;      
     overflow: hidden;    
@@ -1715,7 +1703,7 @@ header{
 }
 
 .producto__wrapper .container .row .img-producto img:hover{
-    transform: scale(1.7);  
+    transform: scale(1.3);  
 }
 
 .producto__wrapper .container .row .img-producto:before{
@@ -1859,13 +1847,18 @@ header{
 
 @media all and (min-width: 1024px){
     .producto__wrapper{
-        padding-top: 200px;
+        height: 100vh;
+        padding-top: 100px;
         display: flex;
             align-items: center;
     }
 
     .producto__wrapper .container .row .img-producto{
         padding: 0;
+    }
+
+    .producto__wrapper .container .row .img-producto img{
+        height: 80%;
     }
 
     .header-producto h1{
@@ -1877,11 +1870,13 @@ header{
         width: 50%;
     }
 
-    
+    .producto__wrapper .container .row .shipping{
+        width: 60%;
+    }
+
     .producto__wrapper .container .row .shipping p{
         font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
+        font-weight: 500;
     }
 
     .producto__wrapper .container .row .detalles-producto p:first-of-type{
@@ -1977,6 +1972,11 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+
+.info a img{
+    width: 80px;
+    margin-bottom: 1em;
 }
 
 .info .footer__nav-links{
@@ -2122,12 +2122,13 @@ footer .copyright p span{
     right: 1em;
     background-color: var(--color-rosa);
     border-radius: 100px;
-    display: none;
+    display: flex;
         justify-content: center;
         align-items: center;
     box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.37);
     cursor: pointer;
     z-index: 1000;
+    transition: all .2s ease-out;
 }
 
 #topBtn i{
