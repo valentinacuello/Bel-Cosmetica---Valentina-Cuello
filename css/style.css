@@ -1390,7 +1390,7 @@ header{
     padding-top: 100px;
 }
 
-.mapa-tienda .info__links, .rrss-icon{
+.mapa-tienda .contacto__info, .rrss-icon{
     display: none;
 }
 
@@ -1514,7 +1514,7 @@ header{
     }
 
 
-    .mapa-tienda .info__links{
+    .mapa-tienda .contacto__info{
         display: block;
         margin-top: 2em;
     }
@@ -1534,7 +1534,7 @@ header{
         margin-top: 0;
     }
 
-    .info__links li:first-child{
+    .contacto__info li:first-child{
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: 500;
@@ -1542,7 +1542,7 @@ header{
         margin-bottom: .5em;
     }
 
-    .info__links li a{
+    .contacto__info li a{
         color: #000;
     }
 
@@ -1600,8 +1600,8 @@ header{
     display: flex;
         justify-content: center;
         align-items: center;
-    border: solid 1px #d3d3d3;
-    position: relative;
+    border: solid 1px #d3d3d3;  
+    cursor: pointer;
 }
 
 .favoritos .favoritos__lista .container .row .card__fav img{    
