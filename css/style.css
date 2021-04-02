@@ -744,8 +744,6 @@ header{
     display: flex;
         justify-content: center;
         align-items: center;
-    overflow: hidden;
-
 }
 
 .nuevalinea__grid-container > div img{
@@ -753,9 +751,7 @@ header{
     transition: all .3s ease;
 }
 
-.nuevalinea__grid-container > div img:hover{
-    transform: scale(1.5);
-}
+
 
 .nuevalinea__grid-container .icon-action{
     height: auto;
@@ -792,6 +788,7 @@ header{
 
 .tienda{
     overflow: hidden;
+    margin-bottom: 2em;
 }
 
 .tienda h1{    
@@ -807,7 +804,6 @@ header{
 .tienda .view-mode__container{
     display: flex;
         justify-content: space-between;
-    margin: 2em;
 }
 
 .tienda .view-mode__container .view-mode__btn{
@@ -863,7 +859,7 @@ header{
 
 .item-tienda .card .card__img{
     width: 100%;
-    height: 100%;
+    height: 250px;
     padding: 1em;
     display: flex;
         justify-content: center;
@@ -876,6 +872,8 @@ header{
 .item-tienda .card .card__img img{
     width: auto;
     height: 170px;
+    position: relative;
+    bottom: 59px;
 }
 
 .item-tienda .card .card__img .icon-action{
@@ -925,7 +923,12 @@ header{
         width: 100%;
     }
 
-    .item-tienda .card .card__img .icon-action{ 
+    .item-tienda .card .card__img{
+        height: 100%;
+    }
+
+    .item-tienda .card .card__img .icon-action{         
+        height: 90%;
         display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -935,6 +938,7 @@ header{
 
     .item-tienda .card .card__img img{
         height: 130px;
+        bottom: 0;
     }
 
     .item-tienda .card .card__img .icon-action a{
@@ -949,18 +953,11 @@ header{
     }
 }
 
-@media all and (min-width: 768px){
-    .tienda .view-mode__container{
-        margin-left: 3.5em;
-        margin-right: 3.5em;
 
-    }
-}
 
 @media all and (min-width: 1024px){
 
     .tienda .view-mode__container{
-        margin-right: 13em;
         justify-content: flex-end;
     }
 
@@ -993,6 +990,7 @@ header{
 
     .item-tienda .card .card__img img{
         height: 230px;
+        bottom: 0;
     }
 
     
@@ -1624,10 +1622,7 @@ header{
 .card-body h3::after{
     content: "";
     display: block;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(207, 207, 207);
-    border-image: initial;
+    border-bottom: solid 1px #d3d3d3;
     margin: 1em 0 0 0;
 }
 
@@ -1661,7 +1656,7 @@ header{
 
 @media all and (min-width: 768px){
     .favoritos .favoritos__lista{
-        padding: 3em;
+        padding: 1em;
     }
 
     .card-body .btn-primary:hover{
@@ -1863,7 +1858,6 @@ header{
 
 @media all and (min-width: 1024px){
     .producto__wrapper{
-        height: 100vh;
         padding-top: 100px;
         display: flex;
             align-items: center;
