@@ -744,11 +744,17 @@ header{
     display: flex;
         justify-content: center;
         align-items: center;
+    overflow: hidden;
 
 }
 
 .nuevalinea__grid-container > div img{
     max-height: 150px;
+    transition: all .3s ease;
+}
+
+.nuevalinea__grid-container > div img:hover{
+    transform: scale(1.5);
 }
 
 .nuevalinea__grid-container .icon-action{
@@ -1026,13 +1032,13 @@ header{
     border-radius: unset;
 }
 
-.modal .modal-content .modal-footer button:first-of-type{
+.modal .modal-content .modal-footer .btn-secondary{
     background-color: #fff;
     border-color: var(--color-rosa-);
     color: var(--color-rosa);
 }
 
-.modal .modal-content .modal-footer button:last-of-type{
+.modal .modal-content .modal-footer .btn-primary{
     background-color: var(--color-rosa);
     border-color: var(--color-rosa);
 }
@@ -1069,7 +1075,7 @@ header{
 }
 
 .historia .historia-txt{
-    padding: 3em;
+    padding: 3em 2em;
     background-color: var(--color-rosa-claro);
 }
 
@@ -1083,10 +1089,10 @@ header{
 
 .historia .historia-txt .txt-p{
     height: 300px;
-    font-size: 1rem;
+    font-size: .9rem;
+    line-height: 1.4rem;
     margin-bottom: 1em;
     overflow: hidden;
-    transition: 0.3s ease-in-out; 
 }
 
 
@@ -1105,7 +1111,7 @@ header{
 }
 
 .mostrar-mas{
-    display: inline !important;
+    display: inline !important;   
 }
 
 .quienes-somos{
@@ -1216,6 +1222,7 @@ header{
 }
 
 .valor__container p{
+    font-size: .9rem;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -1325,8 +1332,7 @@ header{
 
     .valor__container .valor__cards{
         display: flex;
-            align-items: flex-start;
-            flex-direction: column;    
+            align-items: flex-start;  
     }
 
     .valor__container .valor__cards .cards{
@@ -1355,19 +1361,25 @@ header{
     .historia .historia-txt .txt-p{
         width: auto;
         height: auto;
+        font-size: 1rem;
     }
 
     .historia .historia-txt .leermas-btn{
         display: none;
     }
 
-    .valor__container .valor__cards{
-        flex-direction: row;
-    }
 
     .cards__content--hover{
         height: auto;
         width: 220px;
+    }
+
+    .valor__container .valor__cards{
+        flex-direction: row;
+    }
+
+    .valor :is(.valor__container, .valor__cards .cards) p{
+        font-size: 1rem;
     }
 
 }
@@ -1605,7 +1617,7 @@ header{
 
 .card__fav .card-body h3{
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -1798,6 +1810,10 @@ header{
     background-color: #fff;
     border-color: var(--color-rosa);
     color: var(--color-rosa);
+}
+
+.header-producto form button:focus{
+    box-shadow: none;
 }
 
 .producto__wrapper .container .row .shipping{
