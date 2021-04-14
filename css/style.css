@@ -1186,14 +1186,13 @@ header{
     color: var(--color-rosa);
     margin-top: .5em;
     text-align: center;
-    line-height: 1rem;
 }
 
 .cards__content p span{
     display: block;
     font-weight: 400;
     color: #000;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .cards__content--hover{
@@ -1313,12 +1312,6 @@ header{
 
     .quienes-somos .cards .cards__content p{
         font-size: 1.5rem;
-        margin-top: 1.2em;
-        line-height: 1.5rem;
-    }
-
-    .quienes-somos .cards .cards__content p span{
-        font-size: 1rem;
     }
 
     
