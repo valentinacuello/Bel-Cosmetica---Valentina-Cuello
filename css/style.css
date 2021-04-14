@@ -445,7 +445,6 @@ header{
 .grid-item{
     display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 }
 
@@ -498,6 +497,7 @@ header{
     border: solid 2px var(--color-rosa);
     color: var(--color-rosa);
 }
+
 
 
 /*Ofertas*/
@@ -657,17 +657,19 @@ header{
     }
 
     .oferta-ppal h2 span{
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
     .oferta-sec h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         font-weight: 500;
     }
 
     .oferta-sec h2 span{
-        font-size: 4rem;
+        margin: .5em 0;
+        font-size: 3rem;
     }
 }
 
@@ -682,7 +684,7 @@ header{
         justify-content: center;
         align-items: center;
     margin-top: 2em;
-    padding: 8em 0;    
+    padding: 5em 0;    
 }
 
 .nuevalinea__grid-container{
@@ -1113,7 +1115,7 @@ header{
 }
 
 .quienes-somos{
-    margin: 3em auto;
+    margin: 2em auto;
 }
 
 .quienes-somos h3{    
@@ -1208,7 +1210,7 @@ header{
 }
 
 .valor__container{
-    padding: 2em;
+    padding: 3em 2em 2em 2em;
 }
 
 .valor__container h3{
