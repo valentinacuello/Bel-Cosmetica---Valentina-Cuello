@@ -1185,7 +1185,7 @@ header{
     font-weight: 500;
     color: var(--color-rosa);
     margin-top: .5em;
-    text-align: center;
+    text-align: center; 
 }
 
 .cards__content p span{
