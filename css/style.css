@@ -631,6 +631,30 @@ header{
     object-fit: cover;
 }
 
+@media all and (max-width: 320px){
+    .oferta-ppal h2{
+        font-size: 2rem;
+        padding: .3em;
+    }
+
+    .oferta-ppal h2 a{
+        font-size: .5rem;
+    }
+
+    .oferta-sec h2{
+        line-height: 1rem;
+    }
+
+    .oferta-sec h2 span{
+        margin: .5em 0;
+    }
+
+    .oferta-sec h2 a{
+        font-size: .5rem;        
+    }
+}
+
+
 @media all and (min-width: 768px){
     .ofertas{
         margin: 0 10em;
