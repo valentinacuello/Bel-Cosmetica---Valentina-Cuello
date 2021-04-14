@@ -1166,14 +1166,14 @@ header{
     cursor: pointer;
 }
 
-.cards .cards__content img{
+.cards__content img{
     width: 130px;
     position: absolute;
     top: .5em;
     left: .5em;
 }
 
-.cards .cards__content::before{
+.cards__content::before{
     content: "";
     height: 200px;
     width: 133px;
@@ -1181,21 +1181,22 @@ header{
     background-color: var(--color-rosa-claro);
 }
 
-.cards .cards__content p{
+.cards__content p{
     font-weight: 500;
     color: var(--color-rosa);
     margin-top: .5em;
-    text-align: center; 
+    text-align: center;
+    line-height: 1rem;
 }
 
-.cards .cards__content p span{
+.cards__content p span{
     display: block;
     font-weight: 400;
     color: #000;
-    font-size: .9rem;
+    font-size: .7rem;
 }
 
-.cards .cards__content--hover{
+.cards__content--hover{
     width: 130px;
     position: absolute;
     bottom: 3.9em;
@@ -1312,7 +1313,12 @@ header{
 
     .quienes-somos .cards .cards__content p{
         font-size: 1.5rem;
-        margin-top: 1em;
+        margin-top: 1.2em;
+        line-height: 1.5rem;
+    }
+
+    .quienes-somos .cards .cards__content p span{
+        font-size: 1rem;
     }
 
     
