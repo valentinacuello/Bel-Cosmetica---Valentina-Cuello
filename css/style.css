@@ -1120,6 +1120,12 @@ header{
 }
 
 
+.historia .historia-txt .txt-p span:not(:last-of-type){
+    display: block;
+    margin-bottom: 1em;
+}
+
+
 .historia .historia-txt .leermas-btn{
     border: none;
     background-color: transparent;
