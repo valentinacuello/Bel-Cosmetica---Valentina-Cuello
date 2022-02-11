@@ -429,7 +429,7 @@ header{
 .destacados .grid-container{
     width: 80%;
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+        grid-template-columns: repeat(auto-fit, minmax(30%, 300px));
         justify-content: center;
     column-gap: 2em;
     row-gap: 3em;
